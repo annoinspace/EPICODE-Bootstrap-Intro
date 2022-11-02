@@ -40,3 +40,8 @@ hr {
   padding-left: 0;
   padding-right: 0;
 }
+
+.text-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
