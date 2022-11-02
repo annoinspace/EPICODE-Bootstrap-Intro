@@ -49,3 +49,29 @@ hr {
 li {
   list-style: none;
 }
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.margin {
+  margin: auto;
+}
+
+.align-left {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.no-padding {
+  padding-left: 0px;
+  width: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.height-300 {
+  max-height: 100px;
+}
