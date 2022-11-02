@@ -10,10 +10,87 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>music album favourites</title>
   </head>
   <body>
-    <div class="container"></div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-2 mt-3">
+          <img src="./assets/Avatar.svg" alt="muslim woman avatar" />
+        </div>
+        <div class="col-10 jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Welcome</h1>
+            <p class="lead">
+              This is a modified jumbotron that occupies the entire horizontal
+              space of its parent.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="card text-white bg-dark">
+            <img
+              class="img-fluid p-4 max-width:100% height:auto"
+              src="./assets/Concert.svg"
+              class="card-img-top"
+              alt="band"
+            />
+            <div class="card-body">
+              <h5 class="text-center">Song Title</h5>
+              <h6 class="text-center">Artist Name</h6>
+              <div class="icons flex space-between">
+                <i class="bi bi-heart"></i>
+                <div class="icons-center flex space-between">
+                  <i class="bi bi-skip-backward-fill"></i>
+                  <i class="bi bi-pause-circle-fill"></i>
+                  <i class="bi bi-skip-forward"></i>
+                </div>
+                <i class="bi bi-slash-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
