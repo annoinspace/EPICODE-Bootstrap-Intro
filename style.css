@@ -75,3 +75,9 @@ li {
 .height-300 {
   max-height: 100px;
 }
+
+.dark-line {
+  color: rgb(24, 24, 24);
+  border: 2px solid rgb(24, 24, 24);
+  width: 82%;
+}
