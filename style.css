@@ -102,6 +102,7 @@ li {
 .genre-badge {
   width: 100px;
   height: 30px;
+  opacity: 0.85;
   background-color: pink;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
