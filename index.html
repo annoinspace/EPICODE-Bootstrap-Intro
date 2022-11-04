@@ -179,7 +179,7 @@
       </div>
       <hr class="dark-line" />
       <div class="review-section" id="review-section">
-        <h3 class="mt-5">Reviews</h3>
+        <h3 class="mt-5">Album Review</h3>
         <div class="container">
           <div class="row">
             <img
@@ -227,10 +227,10 @@
         <div class="container mt-5 mh-50">
           <div class="row">
             <div class="col-12">
-              <h3 class="mb-n5 mt-5">Tracklist</h3>
+              <h3 class="mb-n1 mt-5">Tracklist</h3>
             </div>
           </div>
-          <div class="row flex center mt-5">
+          <div class="row flex center">
             <table class="col-9 table">
               <thead>
                 <tr>
@@ -355,25 +355,9 @@
                     </button>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">8</th>
-                  <td>Track Name</td>
-                  <td>Artist</td>
-                  <td>3:14 mins</td>
-                  <td>2021</td>
-                  <td>
-                    <button
-                      type="button"
-                      class="btn btn-danger"
-                      onclick="deleteSong()"
-                    >
-                      delete
-                    </button>
-                  </td>
-                </tr>
               </tbody>
             </table>
-            <div class="col-sm-6 col-md-3 col-lg-3 mt-5 mb-5">
+            <div class="d-sm-none d-md-block col-md-3 col-lg-3 mt-5 mb-5">
               <div class="card text-white bg-dark">
                 <div class="img-container">
                   <img
@@ -402,6 +386,80 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button
+                  id="add-track"
+                  type="button"
+                  class="mt-n3 mb-5 btn btn-dark btn-primary btn-lg btn-block px-5"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Add Track
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Track</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <input
+                type="text"
+                id="track-number-modal"
+                placeholder="Track Number"
+              />
+              <input
+                type="text"
+                id="track-title-modal"
+                placeholder="Track Title"
+              />
+              <input
+                type="text"
+                id="artist-name-modal"
+                placeholder="Artist Name"
+              />
+              <input
+                type="text"
+                id="track-duration-modal"
+                placeholder="Track Duration"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
             </div>
           </div>
         </div>

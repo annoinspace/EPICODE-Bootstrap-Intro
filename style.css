@@ -110,3 +110,7 @@ li {
   position: absolute;
   top: 0;
 }
+
+#add-track:hover {
+  box-shadow: 12px 12px 2px 1px rgba(0, 195, 255, 0.2);
+}
