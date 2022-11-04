@@ -245,7 +245,7 @@
               <tbody id="table-body">
                 <tr>
                   <th scope="row">1</th>
-                  <td>Shinunoga E-Wa</td>
+                  <td class="pointer" onclick="changeSong()">Shinunoga E-Wa</td>
                   <td>Fujii Kaze</td>
                   <td>3:05 mins</td>
                   <td>2020</td>
@@ -261,7 +261,9 @@
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Just Watching You</td>
+                  <td class="pointer" onclick="changeSong()">
+                    Just Watching You
+                  </td>
                   <td>Jeong Sewoon</td>
                   <td>4:02 mins</td>
                   <td>2022</td>
@@ -277,7 +279,7 @@
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Daechwita</td>
+                  <td class="pointer" onclick="changeSong()">Daechwita</td>
                   <td>Agust D</td>
                   <td>3:45 mins</td>
                   <td>2020</td>
@@ -293,7 +295,9 @@
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Our Beloved Summer</td>
+                  <td class="pointer" onclick="changeSong()">
+                    Our Beloved Summer
+                  </td>
                   <td>Kim Kyung Hee</td>
                   <td>3:14 mins</td>
                   <td>2021</td>
@@ -369,8 +373,8 @@
                 </div>
                 <div class="card-body">
                   <h5 class="text-center">My Tracklist</h5>
-                  <h6 class="text-center">Title</h6>
-                  <h5 class="text-center">Artist Name</h5>
+                  <h6 id="song-title" class="text-center">Title</h6>
+                  <h5 id="song-artist" class="text-center">Artist Name</h5>
                   <div class="song- flex space-between">
                     <hr />
                     <i class="bi bi-circle-fill"></i>
@@ -467,6 +471,7 @@
                 type="button"
                 class="btn btn-secondary"
                 data-dismiss="modal"
+                onclick="clearValues()"
               >
                 Close
               </button>
