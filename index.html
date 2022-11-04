@@ -231,8 +231,8 @@
             </div>
           </div>
           <div class="row flex center">
-            <table class="col-9 table">
-              <thead>
+            <table id="playlist-table" class="col-9 table">
+              <thead id="thead">
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Title</th>
@@ -242,7 +242,7 @@
                   <th scope="col"></th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="table-body">
                 <tr>
                   <th scope="row">1</th>
                   <td>Shinunoga E-Wa</td>
@@ -394,7 +394,7 @@
                   type="button"
                   class="mt-n3 mb-5 btn btn-dark btn-primary btn-lg btn-block px-5"
                   data-toggle="modal"
-                  data-target="#exampleModal"
+                  data-target="#add-track-modal"
                 >
                   Add Track
                 </button>
@@ -408,7 +408,7 @@
       <!-- Modal -->
       <div
         class="modal fade"
-        id="exampleModal"
+        id="add-track-modal"
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
@@ -435,26 +435,30 @@
             <div class="modal-body">
               <input
                 class="mb-2"
-                type="text"
+                type="number"
                 id="track-number-modal"
+                name="track-number"
                 placeholder="Track Number"
               />
               <input
                 class="mb-2"
                 type="text"
                 id="track-title-modal"
+                name="track-title"
                 placeholder="Track Title"
               />
               <input
                 class="mb-2"
                 type="text"
                 id="artist-name-modal"
+                name="artist-name"
                 placeholder="Artist Name"
               />
               <input
                 class="mb-2"
                 type="text"
                 id="track-duration-modal"
+                name="track-duration"
                 placeholder="Track Duration"
               />
             </div>
@@ -466,7 +470,14 @@
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">Add</button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="add-btn"
+                onclick="addTrack()"
+              >
+                Add
+              </button>
             </div>
           </div>
         </div>
