@@ -68,7 +68,7 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row mt-5 bg-dark center">
+      <div class="row mt-5 center jumbotron jumbotron-fluid text-white bg-dark">
         <div class="col-sm-2 col-md-4 col-lg-2 mt-2 flex center">
           <img
             src="./assets/Avatar.svg"
@@ -77,15 +77,17 @@
           />
         </div>
         <div
-          class="col-sm-10 col-md-8 col-lg-10 jumbotron jumbotron-fluid text-white bg-dark"
+          class="col-sm-10 text-sm-center col-md-8 text-md-left col-lg-10 px-5"
         >
-          <div class="container">
-            <h1 class="display-4">Welcome</h1>
-            <p class="lead">about me .....</p>
-          </div>
+          <h1 class="display-4">My favourite Albums</h1>
+          <p class="lead">
+            Welcome to my webpage, all about my favourite music
+          </p>
+          <hr />
         </div>
       </div>
-      <div class="row mt-5" id="favourite-albums">
+      <div class="row mt-3" id="favourite-albums">
+        <h3 class="col-12 mt-5">My Favourites List</h3>
         <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
           <div class="card text-white bg-dark">
             <div class="img-container">
@@ -98,22 +100,14 @@
             </div>
             <div class="card-body">
               <h5 class="text-center">Album Title</h5>
-              <h6 class="text-center">Track Name</h6>
-              <h5 class="text-center">Artist Name</h5>
-              <div class="song- flex space-between">
-                <hr />
-                <i class="bi bi-circle-fill"></i>
-              </div>
-              <div class="icons flex space-between">
-                <i class="bi bi-heart"></i>
-                <div class="icons-center flex space-between">
-                  <i class="bi bi-skip-backward-fill"></i>
-                  <i class="bi bi-pause-circle-fill"></i>
-                  <i class="bi bi-skip-forward"></i>
-                </div>
-                <i class="bi bi-slash-circle"></i>
-              </div>
+              <h6 class="text-center">Artist Name</h6>
+              <p class="text-center">Duration 00:00</p>
             </div>
+          </div>
+          <div
+            class="genre-badge d-flex justify-content-center align-items-center mt-2"
+          >
+            <span class="font-weight-bold">Genre</span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
@@ -128,22 +122,14 @@
             </div>
             <div class="card-body">
               <h5 class="text-center">Album Title</h5>
-              <h6 class="text-center">Track Name</h6>
-              <h5 class="text-center">Artist Name</h5>
-              <div class="song- flex space-between">
-                <hr />
-                <i class="bi bi-circle-fill"></i>
-              </div>
-              <div class="icons flex space-between">
-                <i class="bi bi-heart"></i>
-                <div class="icons-center flex space-between">
-                  <i class="bi bi-skip-backward-fill"></i>
-                  <i class="bi bi-pause-circle-fill"></i>
-                  <i class="bi bi-skip-forward"></i>
-                </div>
-                <i class="bi bi-slash-circle"></i>
-              </div>
+              <h6 class="text-center">Artist Name</h6>
+              <p class="text-center">Duration 00:00</p>
             </div>
+          </div>
+          <div
+            class="genre-badge d-flex justify-content-center align-items-center mt-2"
+          >
+            <span class="font-weight-bold">Genre</span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mt-5">
@@ -158,22 +144,14 @@
             </div>
             <div class="card-body">
               <h5 class="text-center">Album Title</h5>
-              <h6 class="text-center">Track Name</h6>
-              <h5 class="text-center">Artist Name</h5>
-              <div class="song- flex space-between">
-                <hr />
-                <i class="bi bi-circle-fill"></i>
-              </div>
-              <div class="icons flex space-between">
-                <i class="bi bi-heart"></i>
-                <div class="icons-center flex space-between">
-                  <i class="bi bi-skip-backward-fill"></i>
-                  <i class="bi bi-pause-circle-fill"></i>
-                  <i class="bi bi-skip-forward"></i>
-                </div>
-                <i class="bi bi-slash-circle"></i>
-              </div>
+              <h6 class="text-center">Artist Name</h6>
+              <p class="text-center">Duration 00:00</p>
             </div>
+          </div>
+          <div
+            class="genre-badge d-flex justify-content-center align-items-center mt-2"
+          >
+            <span class="font-weight-bold">Genre</span>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3 mt-5 mb-5">
@@ -188,22 +166,14 @@
             </div>
             <div class="card-body">
               <h5 class="text-center">Album Title</h5>
-              <h6 class="text-center">Track Name</h6>
-              <h5 class="text-center">Artist Name</h5>
-              <div class="song- flex space-between">
-                <hr />
-                <i class="bi bi-circle-fill"></i>
-              </div>
-              <div class="icons flex space-between">
-                <i class="bi bi-heart"></i>
-                <div class="icons-center flex space-between">
-                  <i class="bi bi-skip-backward-fill"></i>
-                  <i class="bi bi-pause-circle-fill"></i>
-                  <i class="bi bi-skip-forward"></i>
-                </div>
-                <i class="bi bi-slash-circle"></i>
-              </div>
+              <h6 class="text-center">Artist Name</h6>
+              <p class="text-center">Duration 00:00</p>
             </div>
+          </div>
+          <div
+            class="genre-badge d-flex justify-content-center align-items-center mt-2"
+          >
+            <span class="font-weight-bold">Genre</span>
           </div>
         </div>
       </div>
@@ -253,77 +223,94 @@
             </div>
           </div>
         </div>
+        <hr class="dark-line mt-5 mb-5" />
         <div class="container mt-5 mh-50">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="mb-n5 mt-5">Tracklist</h3>
+            </div>
+          </div>
           <div class="row flex center">
             <table class="col-8 table">
               <thead>
                 <tr>
                   <th scope="col">#</th>
                   <th scope="col">Title</th>
+                  <th scope="col">Artist</th>
                   <th scope="col">Length</th>
-                  <th scope="col">Highest Chart Position</th>
+                  <th scope="col">Released</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Track Name</td>
-                  <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td>Shinunoga E-Wa</td>
+                  <td>Fujii Kaze</td>
+                  <td>3:05 mins</td>
+                  <td>2020</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Track Name</td>
-                  <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td>Just Watching You</td>
+                  <td>Jeong Sewoon</td>
+                  <td>4:02 mins</td>
+                  <td>2022</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Track Name</td>
-                  <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td>I'll Make a Man Out of You</td>
+                  <td>Donny Osmond</td>
+                  <td>3:21 mins</td>
+                  <td>1998</td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>Track Name</td>
+                  <td>Our Beloved Summer</td>
+                  <td>Kim Kyung Hee</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">6</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">7</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">8</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">9</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">10</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">11</th>
                   <td>Track Name</td>
+                  <td>Artist</td>
                   <td>3:14 mins</td>
-                  <td>1st</td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
@@ -338,8 +325,8 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h5 class="text-center">Album Title</h5>
-                  <h6 class="text-center">Track Name</h6>
+                  <h5 class="text-center">My Tracklist</h5>
+                  <h6 class="text-center">Title</h6>
                   <h5 class="text-center">Artist Name</h5>
                   <div class="song- flex space-between">
                     <hr />

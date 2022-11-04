@@ -3,6 +3,19 @@
   font-size: 20px;
 } */
 
+.jumbotron {
+  -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -80,4 +93,19 @@ li {
   color: rgb(24, 24, 24);
   border: 2px solid rgb(24, 24, 24);
   width: 82%;
+}
+
+#favourite-albums h3 div + div {
+  position: relative;
+}
+
+.genre-badge {
+  width: 100px;
+  height: 30px;
+  background-color: pink;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  position: absolute;
+  top: 0;
 }
