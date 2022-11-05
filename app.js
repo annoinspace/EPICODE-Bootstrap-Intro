@@ -22,18 +22,17 @@ function addTrack() {
   <td>${newTrackDuration}</td>
   <td></td>`
   tracklistTable.appendChild(newRow)
+}
 
-  function clearValues() {
-    let newTrackNumber = document.getElementById("track-number-modal").value
-    let newTrackTitle = document.getElementById("track-title-modal").value
-    let newArtistName = document.getElementById("artist-name-modal").value
-    let newTrackDuration = document.getElementById("track-duration-modal").value
-
-    newTrackNumber.value = ""
-    newTrackTitle.value = ""
-    newArtistName.value = ""
-    newTrackDuration.value = ""
-  }
+function clearValues() {
+  let newTrackNumber = document.getElementById("track-number-modal").value
+  let newTrackTitle = document.getElementById("track-title-modal").value
+  let newArtistName = document.getElementById("artist-name-modal").value
+  let newTrackDuration = document.getElementById("track-duration-modal").value
+  newTrackNumber.value = ""
+  newTrackTitle.value = ""
+  newArtistName.value = ""
+  newTrackDuration.value = ""
 }
 
 function changeSong() {
